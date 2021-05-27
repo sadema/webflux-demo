@@ -18,4 +18,4 @@ FROM ${RUNTIME_IMAGE}
 COPY --from=build target/webflux-demo-*.jar /opt/app/webflux-demo.jar
 
 WORKDIR /opt/app/
-CMD ["/usr/bin/java", "-jar", "webflux-demo.jar"]
+CMD ["java", "-jar", "webflux-demo.jar"]
