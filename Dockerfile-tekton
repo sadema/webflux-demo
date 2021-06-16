@@ -1,0 +1,6 @@
+FROM openjdk:11-jdk-slim
+
+COPY target/webflux-demo-*.jar /opt/app/webflux-demo.jar
+
+WORKDIR /opt/app/
+CMD ["java", "-jar", "webflux-demo.jar"]
